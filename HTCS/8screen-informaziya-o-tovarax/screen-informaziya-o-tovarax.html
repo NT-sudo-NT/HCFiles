@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Товары</title>
+<link rel="stylesheet" href="products.css" />
+</head>
+<body>
+
+<header class="header">
+  <input type="search" placeholder="Поиск" aria-label="Поиск" />
+  <button class="icon cart" title="Корзина"></button>
+  <button class="icon stats" title="Гистограмма"></button>
+  <button class="icon user" title="Пользователь"></button>
+  <button class="icon bell" title="Уведомления"></button>
+  <button class="icon profile" title="Профиль"></button>
+</header>
+
+<main class="main">
+  <h1>Товары</h1>
+  <aside class="filters">
+    <h2>Фильтры</h2>
+    <label>Название<br /><input type="text" /></label>
+    <label>Телефон<br /><input type="text" /></label>
+    <label>Организация<br /><input type="text" /></label>
+    <label>Ответственный<br />
+      <select>
+        <option>Выберите значения</option>
+      </select>
+    </label>
+    <div class="filter-buttons">
+      <button disabled>Поиск</button>
+      <button disabled>Очистить</button>
+    </div>
+  </aside>
+
+  <section class="table-section">
+    <div class="actions">
+      <button class="btn-add">+ Добавить товар</button>
+      <select>
+        <option>Действия</option>
+      </select>
+    </div>
+
+    <table class="data-table" border="1" cellspacing="0" cellpadding="4">
+      <thead>
+        <tr>
+          <th><input type="checkbox" /></th>
+          <th></th>
+          <th>Название</th>
+          <th>Наименование товара</th>
+          <th>Статус</th>
+          <th>Количество единиц товара на складе</th>
+          <th>Цена за единицу товара</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>✎/🗑</td>
+          <td>Товар</td>
+          <td>Телефон Samsung Galaxy S23 Ultra</td>
+          <td>Под заказ</td>
+          <td>8</td>
+          <td>96999 рублей</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>✎/🗑</td>
+          <td>Товар</td>
+          <td>Обувь Nike Air Max 270 React</td>
+          <td>Под заказ</td>
+          <td>56</td>
+          <td>17800 рублей</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>✎/🗑</td>
+          <td>Товар</td>
+          <td>Яблоко красное горное</td>
+          <td>Под заказ</td>
+          <td>34</td>
+          <td>~66 рублей</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+</body>
+</html>

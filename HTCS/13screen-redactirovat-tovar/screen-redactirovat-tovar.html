@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Редактирование товара</title>
+    <link rel="stylesheet" href="product-edit.css" />
+</head>
+<body>
+
+<header class="header">
+    <input type="search" placeholder="Поиск" aria-label="Поиск" />
+    <button class="icon cart" title="Корзина"></button>
+    <button class="icon stats" title="Гистограмма"></button>
+    <button class="icon user" title="Пользователь"></button>
+    <button class="icon bell" title="Уведомления"></button>
+    <button class="icon profile" title="Профиль"></button>
+</header>
+
+<main class="main">
+
+    <h1>Товары / (Название товара) / Редактирование</h1>
+
+    <section class="edit-product">
+        <h2>Редактирование</h2>
+
+        <div class="button-group">
+            <button class="save">Сохранить</button>
+            <button class="cancel">Отмена</button>
+        </div>
+
+        <label>
+            <span class="label-text">Название</span>
+            <input type="text" placeholder="Введите название" />
+        </label>
+
+        <label>
+            <span class="label-text">Статус</span>
+            <select>
+                <option>Перспективный</option>
+                <option>Неактивный</option>
+                <option>Активный</option>
+            </select>
+        </label>
+
+        <label>
+            <span class="label-text">Наименование товара</span>
+            <input type="text" placeholder="Введите наименование" />
+        </label>
+
+        <label>
+            <span class="label-text">Кол-во единиц товара на складе</span>
+            <input type="number" placeholder="Введите количество" />
+        </label>
+
+        <label>
+            <span class="label-text">Цена за единицу товара</span>
+            <input type="text" placeholder="Введите цену" />
+        </label>
+
+        <label>
+            <span class="label-text">Описание</span>
+            <textarea placeholder="Введите описание"></textarea>
+        </label>
+
+        <label>
+            <span class="label-text">Организация</span>
+            <select>
+                <option>Выберите значение</option>
+            </select>
+        </label>
+
+        <label>
+            <span class="label-text">Ответственный</span>
+            <select>
+                <option>Выберите значение</option>
+            </select>
+        </label>
+    </section>
+
+</main>
+
+</body>
+</html>

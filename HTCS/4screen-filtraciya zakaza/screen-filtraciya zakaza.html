@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Заказы</title>
+<link rel="stylesheet" href="orders.css" />
+</head>
+<body>
+
+<header class="header">
+  <input type="search" placeholder="Поиск" aria-label="Поиск" />
+  <button class="icon cart" title="Корзина"></button>
+  <button class="icon stats" title="Гистограмма"></button>
+  <button class="icon user" title="Пользователь"></button>
+  <button class="icon bell" title="Уведомления"></button>
+  <button class="icon profile" title="Профиль"></button>
+</header>
+
+<main class="main">
+  <h1>Заказы</h1>
+
+  <aside class="filters">
+    <h2>Фильтры</h2>
+    <label>Название<br /><input type="text" /></label>
+    <label>Статус<br />
+      <select>
+        <option>Выберите значения</option>
+      </select>
+    </label>
+    <label>Период<br />от<br /><input type="date" /><br />до<br /><input type="date" /></label>
+    <label>Номер<br /><input type="text" /></label>
+    <label>Контакт<br /><input type="text" /></label>
+    <label>Ответственный<br />
+      <select>
+        <option>Выберите значения</option>
+      </select>
+    </label>
+    <div class="filter-buttons">
+      <button disabled>Поиск</button>
+      <button disabled>Очистить</button>
+    </div>
+  </aside>
+
+  <section class="orders-section">
+    <div class="orders-actions">
+      <button class="btn-add">+ Добавить заказ</button>
+      <select>
+        <option>Действия</option>
+      </select>
+    </div>
+
+    <table class="orders-table" border="1" cellspacing="0" cellpadding="4">
+      <thead>
+        <tr>
+          <th><input type="checkbox" /></th>
+          <th></th>
+          <th>Название</th>
+          <th>Контакт</th>
+          <th>Статус</th>
+          <th>Сумма</th>
+          <th>Дата</th>
+          <th>Номер</th>
+          <th>Адрес</th>
+          <th>Ответственный</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status new">Новый</span></td><td>24 000.00 руб.</td><td>02.08.2015</td><td>020</td><td>Горького, 17</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status new">Новый</span></td><td>7 000.00 руб.</td><td>02.08.2015</td><td>019</td><td>Ленина, 19</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status new">Новый</span></td><td>4 500.00 руб.</td><td>02.08.2015</td><td>018</td><td>Веры Засулич, 10а</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status new">Новый</span></td><td>9 800.00 руб.</td><td>02.08.2015</td><td>017</td><td>Пушкина, 106а</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status new">Новый</span></td><td>11 000.00 руб.</td><td>02.08.2015</td><td>016</td><td>Соликамская, 8</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status new">Новый</span></td><td>14 000.00 руб.</td><td>02.08.2015</td><td>015</td><td>Шоссе Космонавтов, 179</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status paid">Оплачен</span></td><td>5 000.00 руб.</td><td>02.08.2015</td><td>014</td><td>Куйбышева, 10</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status paid">Оплачен</span></td><td>6 700.00 руб.</td><td>02.08.2015</td><td>013</td><td>Локомотивная, 4а</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status sent">Отправлен</span></td><td>12 300.00 руб.</td><td>02.08.2015</td><td>012</td><td>Лермонтова, 7</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status sent">Отправлен</span></td><td>5 600.00 руб.</td><td>02.08.2015</td><td>011</td><td>Старцева, 9</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status sent">Отправлен</span></td><td>10 000.00 руб.</td><td>02.08.2015</td><td>010</td><td>Чкалова, 98</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status sent">Отправлен</span></td><td>9 000.00 руб.</td><td>02.08.2015</td><td>009</td><td>Плеханова, 7</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status sent">Отправлен</span></td><td>17 000.00 руб.</td><td>02.08.2015</td><td>008</td><td>Кронштадская, 77</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status paid">Оплачен</span></td><td>4 500.00 руб.</td><td>02.08.2015</td><td>007</td><td>Пушкина, 2</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status paid">Оплачен</span></td><td>12 000.00 руб.</td><td>02.08.2015</td><td>006</td><td>Газеты Звезда, 90</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status paid">Оплачен</span></td><td>6 400.00 руб.</td><td>02.08.2015</td><td>005</td><td>Леонова, 5</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status paid">Оплачен</span></td><td>12 400.00 руб.</td><td>02.08.2015</td><td>004</td><td>Сибирская, 1</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Дмитрий</td><td><span class="status done">Выполнен</span></td><td>15 000.00 руб.</td><td>02.08.2015</td><td>001</td><td>Ленина, 66</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Василий</td><td><span class="status done">Выполнен</span></td><td>20 000.00 руб.</td><td>02.08.2015</td><td>002</td><td>Лермонтова, 72</td><td>Новиков Тимофей</td></tr>
+        <tr><td><input type="checkbox" /></td><td>✎/🗑</td><td>Заказ</td><td>👤 Олег Уваров</td><td><span class="status done">Выполнен</span></td><td>2 300.00 руб.</td><td>02.08.2015</td><td>003</td><td>Пушкина, 107</td><td>Новиков Тимофей</td></tr>
+        <tr><td colspan="10" class="total">208 500.00 руб.</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Клиенты</title>
+<link rel="stylesheet" href="clients.css" />
+</head>
+<body>
+
+<header class="header">
+  <input type="search" placeholder="Поиск" aria-label="Поиск" />
+  <button class="icon cart" title="Корзина"></button>
+  <button class="icon stats" title="Гистограмма"></button>
+  <button class="icon user" title="Пользователь"></button>
+  <button class="icon bell" title="Уведомления"></button>
+  <button class="icon profile" title="Профиль"></button>
+</header>
+
+<main class="main">
+  <h1>Клиенты</h1>
+  <aside class="filters">
+    <h2>Фильтры</h2>
+    <label>Название<br /><input type="text" /></label>
+    <label>Телефон<br /><input type="text" /></label>
+    <label>Организация<br /><input type="text" /></label>
+    <label>Ответственный<br />
+      <select>
+        <option>Выберите значения</option>
+      </select>
+    </label>
+    <div class="filter-buttons">
+      <button disabled>Поиск</button>
+      <button disabled>Очистить</button>
+    </div>
+  </aside>
+
+  <section class="table-section">
+    <div class="actions">
+      <button class="btn-add">+ Добавить контакт</button>
+      <select>
+        <option>Действия</option>
+      </select>
+    </div>
+
+    <table class="data-table" border="1" cellspacing="0" cellpadding="4">
+      <thead>
+        <tr>
+          <th><input type="checkbox" /></th>
+          <th></th>
+          <th>Название</th>
+          <th>Организация</th>
+          <th>Статус</th>
+          <th>Телефон</th>
+          <th>E-mail</th>
+          <th>Описание</th>
+          <th>Ответственный</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>✎/🗑</td>
+          <td>Дмитрий</td>
+          <td>ТехноСервис</td>
+          <td>Активный</td>
+          <td>+79250689110</td>
+          <td>dmitriy13@gmail.com</td>
+          <td>Менеджер по закупкам</td>
+          <td>Новиков Тимофей</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>✎/🗑</td>
+          <td>Василий</td>
+          <td>ЭкоПродукты</td>
+          <td>Активный</td>
+          <td>+7925028348</td>
+          <td>vasiliy.a@gmail.com</td>
+          <td>Директор по развитию</td>
+          <td>Новиков Тимофей</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>✎/🗑</td>
+          <td>Олег Уваров</td>
+          <td>СтройГарант</td>
+          <td>Активный</td>
+          <td>+79917174850</td>
+          <td>oleg.uvarov@mail.com</td>
+          <td>Начальн. отдела снабж.</td>
+          <td>Новиков Тимофей</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+</body>
+</html>
