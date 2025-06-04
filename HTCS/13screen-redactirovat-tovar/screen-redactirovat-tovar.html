@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Редактирование товара</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <input type="text" placeholder="Поиск" class="search">
+      <div class="icons-left">
+        <button aria-label="Корзина" class="icon-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </button>
+        <button aria-label="Статистика" class="icon-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="20" x2="12" y2="10"></line>
+            <line x1="18" y1="20" x2="18" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="16"></line>
+          </svg>
+        </button>
+        <button aria-label="Пользователь" class="icon-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M4 21v-2a4 4 0 0 1 3-3.87"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <button aria-label="Уведомления" class="icon-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        </svg>
+      </button>
+      <button aria-label="Профиль" class="icon-btn profile-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="black" stroke="none">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="10" r="3" fill="white"></circle>
+          <path d="M12 13c-4 0-5 3-5 3v1h10v-1s-1-3-5-3z" fill="white"></path>
+        </svg>
+        <span class="dropdown-arrow">▼</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <nav class="breadcrumb">
+      Товары / (Название товара) / Редактирование
+    </nav>
+
+    <div class="actions">
+      <button class="btn btn-add">
+        <svg class="btn-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        Добавить товар
+      </button>
+      <select class="actions-select" aria-label="Действия">
+        <option>Действия</option>
+        <option>Удалить</option>
+        <option>Экспорт</option>
+      </select>
+    </div>
+
+    <form class="edit-form" action="#" method="post" autocomplete="off">
+      <div class="form-row form-row-top">
+        <label>Редактирование</label>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-save" disabled>сохранить</button>
+          <button type="button" class="btn btn-cancel">Отмена</button>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="name">Название</label>
+        <input type="text" id="name" name="name" disabled>
+      </div>
+
+      <div class="form-row">
+        <label for="status">Статус</label>
+        <select id="status" name="status" disabled>
+          <option>Перспективный</option>
+          <option>Активный</option>
+          <option>Архивный</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="productName">Наименование товара</label>
+        <input type="text" id="productName" name="productName" disabled>
+      </div>
+
+      <div class="form-row">
+        <label for="quantity">Кол-во единиц товара на складе</label>
+        <input type="number" id="quantity" name="quantity" disabled>
+      </div>
+
+      <div class="form-row">
+        <label for="price">Цена за единицу товара</label>
+        <input type="text" id="price" name="price" disabled>
+      </div>
+
+      <div class="form-row">
+        <label for="description">Описание</label>
+        <textarea id="description" name="description" rows="5" disabled></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="organization">Организация</label>
+        <select id="organization" name="organization" disabled>
+          <option>Выберите значение</option>
+          <option>Организация 1</option>
+          <option>Организация 2</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="responsible">Ответственный</label>
+        <select id="responsible" name="responsible" disabled>
+          <option>Выберите значение</option>
+          <option>Иван Иванов</option>
+          <option>Петр Петров</option>
+        </select>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

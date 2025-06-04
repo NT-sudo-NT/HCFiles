@@ -1,0 +1,85 @@
+<!-- orders-edit.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Заказы / (Название заказа) / Редактирование</title>
+<link rel="stylesheet" href="orders-edit.css">
+</head>
+<body>
+
+<header class="header">
+  <input type="search" class="search-input" placeholder="Поиск" aria-label="Поиск">
+  <nav class="nav-icons" aria-label="Основные действия">
+    <button class="icon-btn icon-cart" title="Корзина" aria-label="Корзина"></button>
+    <button class="icon-btn icon-stats" title="Статистика" aria-label="Статистика"></button>
+    <button class="icon-btn icon-user" title="Пользователь" aria-label="Пользователь"></button>
+  </nav>
+  <div class="header-right">
+    <button class="icon-btn icon-bell" title="Уведомления" aria-label="Уведомления"></button>
+    <button class="icon-btn icon-profile" title="Профиль" aria-haspopup="true" aria-expanded="false" aria-label="Профиль"></button>
+  </div>
+</header>
+
+<main class="main-content" aria-label="Редактирование заказа">
+  <h1>Заказы / (Название заказа) / Редактирование</h1>
+
+  <div class="actions-bar">
+    <button class="btn btn-add" type="button" aria-label="Добавить заказ">+ Добавить заказ</button>
+    <select aria-label="Действия" class="actions-select">
+      <option>Действия</option>
+    </select>
+  </div>
+
+  <form class="form-edit" aria-label="Форма редактирования заказа" autocomplete="off">
+    <fieldset>
+      <legend>Редактирование</legend>
+
+      <div class="form-buttons">
+        <button type="button" disabled>сохранить</button>
+        <button type="reset">Отмена</button>
+      </div>
+
+      <label for="name">Название</label>
+      <input id="name" name="name" type="text" disabled>
+
+      <label for="status">Статус</label>
+      <select id="status" name="status" disabled>
+        <option selected>Новый</option>
+      </select>
+
+      <label for="description">Описание</label>
+      <textarea id="description" name="description" rows="5" disabled></textarea>
+
+      <label for="sum">Сумма</label>
+      <div class="sum-input">
+        <input id="sum" name="sum" type="number" value="0" disabled>
+        <select disabled>
+          <option selected>руб.</option>
+        </select>
+      </div>
+
+      <label for="date">Дата</label>
+      <input id="date" name="date" type="text" disabled>
+
+      <label for="organization">Организация</label>
+      <select id="organization" name="organization" disabled>
+        <option selected>Выберите значение</option>
+      </select>
+
+      <label for="contact">Контакт</label>
+      <select id="contact" name="contact" disabled>
+        <option selected>Выберите значение</option>
+      </select>
+
+      <label for="responsible">Ответственный</label>
+      <select id="responsible" name="responsible" disabled>
+        <option selected>Выберите значение</option>
+      </select>
+    </fieldset>
+  </form>
+</main>
+
+</body>
+</html>

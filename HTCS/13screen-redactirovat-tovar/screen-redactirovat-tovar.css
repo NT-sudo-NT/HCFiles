@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* Хедер */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #777;
+  padding: 8px 16px;
+  gap: 12px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search {
+  max-width: 200px;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.icons-left,
+.icons-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn svg {
+  stroke: black;
+  fill: none;
+}
+
+.profile-btn svg {
+  fill: black;
+  stroke: none;
+}
+
+.profile-btn {
+  position: relative;
+  color: black;
+  font-size: 10px;
+  user-select: none;
+}
+
+.dropdown-arrow {
+  margin-left: 4px;
+  font-size: 10px;
+  color: black;
+}
+
+/* Основной контент */
+.main-content {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 16px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-icon {
+  stroke: white;
+}
+
+.actions-select {
+  font-size: 13px;
+  padding: 6px 8px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-row-top {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  font-size: 13px;
+  color: #222;
+  min-width: 180px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background: #ccc;
+  border: none;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #555;
+  resize: vertical;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled] {
+  color: #666;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-save,
+.btn-cancel {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-save {
+  background: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  background: #ddd;
+  color: #555;
+}
+
+.btn-cancel:hover {
+  background: #ccc;
+}
+
+/* Медиазапросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .btn-add {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .icon-btn {
+        width: 20px;
+        height: 20px;
+    }
+}
